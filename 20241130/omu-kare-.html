@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body onclick="changeBackgroundColor()">
+    <h1>omuraisu kare-raisus</h1>
+    <p>がちでおなかがへったそうです</p>
+    <p>あまり興味はありませんね( ´∀｀ )</p>
+
+    <script>
+        function changeBackgroundColor() {
+            const body = document.body;
+            if (body.style.backgroundColor === 'white' || body.style.backgroundColor === '') {
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+            } else {
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+            }
+            }
+    </script>
+</body>
+</html>
